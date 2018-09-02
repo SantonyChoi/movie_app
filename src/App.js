@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Movie } from './Movie';
+import Movie from './Movie.js';
 
 class App extends Component {
 
@@ -16,6 +16,8 @@ class App extends Component {
       return (
         <Movie
           title={movie.title_english}
+          genres={movie.genres}
+          poster={movie.large_cover_image}
         />
       );
     });
